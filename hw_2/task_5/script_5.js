@@ -15,6 +15,9 @@ let secCount = parseInt(prompt('Введите количесвто пройде
 // Шаг 2 - Вычесления результата
 let minuteCount = (secCount / secPerMinute).toFixed(3);
 let hourCount = (secCount / secPerHour).toFixed(6);
+//let minuteCount = Math.floor(secCount % secPerHour / secPerMinute); ========= все хорошо, но так по меннию лектора будет лучше
+//let hourCount = Math.floor(secCount / secPerHour); ========== все хорошо, но так по меннию лектора будет лучше
+
 
 // Шаг 3 - Выводим результат
 document.write(`
