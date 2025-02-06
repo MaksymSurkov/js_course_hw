@@ -17,8 +17,8 @@ let a = parseFloat(prompt('Введите переменную "a"'));
 let b = parseFloat(prompt('Введите переменную "b"'));
 let c = parseFloat(prompt('Введите переменную "c"'));
 
-const numberFirstExample = 12;
-const numberSecondExample = 2;
+const numberFirstExample = 12; // не обязательно в таких примерах литералы обозначать отдельными константами
+const numberSecondExample = 2; // не обязательно в таких примерах литералы обозначать отдельными константами
 
 // Шаг 2 - Вычесления результата
 let resultFirstExample = (a + numberFirstExample + b).toFixed(1);
