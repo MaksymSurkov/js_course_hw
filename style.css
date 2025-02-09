@@ -119,3 +119,7 @@ button {
 		border-right: 1px solid #ffff;
 	}
 }
+/*----------------------------------------------------*/
+.block {
+	padding-top: 25px;
+}
