@@ -16,7 +16,7 @@ let moneyCount = parseFloat(prompt(`Введите сколько у вас де
 //пишем что вы можете купить этот товар.
 if (moneyCount < itemPrice)
 	document.write(`<p class="block">К сожалению у вас не достаточно средств для покупки</p>`)
-else if ((moneyCount % itemPrice) >= 4)
+else if ((moneyCount - itemPrice) >= 4) // (moneyCount % itemPrice) - я так сделал, но если у пользователя ровно в 2 раза больше денег, то остаток от деления будет 0!
 	document.write(`<p class="block">Поздравляем, Вы можете купить этот товар и еще Вам хватит купить лотерею за 4 грн.</p>`)
 else document.write(`<p class="block">Поздравляем, Вы можете купить этот товар.</p>`)
 
