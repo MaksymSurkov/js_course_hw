@@ -123,3 +123,30 @@ button {
 .block {
 	padding-top: 25px;
 }
+/*----------------------------------------------------*/
+.button {
+	padding: 10px;
+	margin-right: 10px;
+	color: #5e5373;
+	background-color: #ffff;
+	border-radius: 5px;
+}
+/*----------------------------------------------------*/
+.form-element {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 5px;
+	input {
+		width: 100px;
+		height: 20px;
+		background-color: inherit;
+		border: 1px solid #ffff;
+		border-radius: 5px;
+	}
+}
+/*----------------------------------------------------*/
+.container {
+	display: flex;
+	gap: 10px;
+}
