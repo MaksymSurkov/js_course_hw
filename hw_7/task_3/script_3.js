@@ -3,6 +3,7 @@
 
 if (confirm('Почати тестування?')) {
 	let numberOfDay = parseInt(prompt(`Введите номер дня недели`));
+	// лучше дать название функции с приставкой is (isWorkDay)
 	function getDayCategory(num) {
 		let dayCategory;
 		switch (num) {
