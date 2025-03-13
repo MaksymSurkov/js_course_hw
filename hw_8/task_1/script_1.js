@@ -41,4 +41,56 @@ if (confirm('Почати тестування?')) {
 	} finally {
 		document.write(`<p>Thank You!</p>`)
 	}
+
+	// Учитель рекомендовал отдельные подзадачи разбивать на отдельные функции. Второй вариант кода:
+
+	// // Функция возвращает средний бал
+	// function getAvgScore(arr) {
+	// 	let sum = 0;
+	// 	for (let i = 0; i < arr.length; i++) {
+	// 		sum += arr[i];
+	// 	}
+	// 	return sum/arr.length
+	// }
+	// // Функция возвращает минимальный бал ученика
+	// function getMinMarkStudent(arr) {
+	// 	let min = 5;
+	// 	for (let i = 0; i < arr.length; i++) {
+	// 		if (arr[i] < min) {
+	// 			min = arr[i];
+	// 		}
+	// 	}
+	// 	return min;
+	// }
+
+	// // функция возвращает категорию ученика
+	// function getAvgUserGrade(arr) {
+	// 	let min = getMinMarkStudent(arr);
+	// 	let cat;
+
+	// 	switch (min) {
+	// 		case 5: cat = 'Отличник'
+	// 			break;
+	// 		case 4:cat = 'Хорошист'
+	// 			break;
+	// 		case 3:cat = 'Троишник'
+	// 			break;
+	// 		case 2:cat = 'Двоишник'
+	// 			break;
+	// 		default: throw new Error("Введены некоректные оценки");
+	// 	}
+
+	// 	return cat;
+	// };
+
+	// let avgScore = getAvgScore(userGrade);
+
+	// try {
+	// 	let studentCat = getAvgUserGrade(userGrade);
+	// 	document.write(`<p>Средняя оценка ученика: ${(avgScore).toFixed(2)}</p><p>Ученик: '${studentCat}'</p>`)
+	// } catch (error) {
+	// 	document.write(`<p>${error.message}</p>`)
+	// } finally {
+	// 	document.write(`<p>Thank You!</p>`)
+	// }
 }
