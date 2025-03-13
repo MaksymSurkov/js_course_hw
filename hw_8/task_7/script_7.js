@@ -84,7 +84,7 @@ if (confirm('Почати тестування?')) {
 
 	// Так я ее решил с рекомендацией учителя - создать общую функцию куда будут передоваться начальный и конечный индекс
 	// Общая функция в которую передается начальный и конечный индекс
-	function generalFunc(arr, startIndex, endIndex) {
+	function generalFunc(arr, startIndex, endIndex, step = 1) {
 		let sum = 0;
 		for (let i = startIndex; i < endIndex; i++) {
 			sum += arr[i];
@@ -108,22 +108,8 @@ if (confirm('Почати тестування?')) {
 	document.write(`<p style = "margin-top: 5px;">5. сумарна кількість грошей за ІІ квартал: ${generalFunc(paymentYearValues, 3, 6)}</p>`);
 
 	// 6. сумарна кількість грошей за парні місяці (з парними номерами);
-	let evenMonthYearPaymentsValue = (arr) => {
-		let sum = 0;
-		for (let i = 1; i <= arr.length; i+=2) {
-			sum += arr[i];
-		}
-		return sum;
-	}
-	document.write(`<p style = "margin-top: 5px;">6. сумарна кількість грошей за парні місяці (з парними номерами): ${evenMonthYearPaymentsValue(paymentYearValues)}</p>`);
+	document.write(`<p style = "margin-top: 5px;">6. сумарна кількість грошей за парні місяці (з парними номерами): ${generalFunc(paymentYearValues, 1, paymentYearValues.length, 2)}</p>`);
 	
 	// 7. сумарна кількість грошей за місяці, які є початковими у сезоні (весна, літо, осінь, зима).
-	let startSeasonYearPaymentsValue = (arr) => {
-		let sum = 0;
-		for (let i = 2; i <= arr.length; i+=3) {
-			sum += arr[i];
-		}
-		return sum;
-	}
-	document.write(`<p style = "margin-top: 5px;">7. сумарна кількість грошей за місяці, які є початковими у сезоні (весна, літо, осінь, зима): ${startSeasonYearPaymentsValue(paymentYearValues)}</p>`);
+	document.write(`<p style = "margin-top: 5px;">7. сумарна кількість грошей за місяці, які є початковими у сезоні (весна, літо, осінь, зима): ${generalFunc(paymentYearValues, 2, paymentYearValues.length, 3)}</p>`);
 }
