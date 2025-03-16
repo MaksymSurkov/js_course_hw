@@ -11,7 +11,6 @@ if (confirm('Почати тестування?')) {
 		arr.forEach((item, index, arr) => {
 			if (item > maxPrice) {
 				arr[index] = parseInt((item * dsct).toFixed(2));
-				console.log(arr[index]);
 			}
 		});
 		return arr;
