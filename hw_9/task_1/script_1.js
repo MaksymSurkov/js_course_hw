@@ -3,8 +3,8 @@
 
 if (confirm('Почати тестування?')) {
 	let userNumber = parseInt(prompt('Введите количество элементов'));
-	function createArray(items, fill) {
-		let arr = new Array(items).fill(fill);
+	function createArray(items, fillValue) {
+		let arr = new Array(items).fill(fillValue);
 		return arr;
 	}
 	let newArr = createArray(userNumber, 0)
