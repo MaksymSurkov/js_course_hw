@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../style.css">
+	<title>Task 1</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1>Task #1</h1>
+		</header>
+		<main class="main">
+			<div class="main__title">
+				<p>Задача 1. Розробити калькулятор</p>
+			</div>
+			<form action="#" class="form">
+				<div class="form__row">
+					<label for="first">First number</label>
+					<input id="first" autocomplete="off" type="number" name="form[]" data-error="Помилка" placeholder="0" class="input">
+				</div>
+				<div class="form__row">
+					<label for="second">Second number</label>
+					<input id="second" autocomplete="off" type="number" name="form[]" data-error="Помилка" placeholder="0" class="input">
+				</div>
+				<div class="form__buttons">
+					<button type="button" id="dodat">Додати</button>
+					<button type="button" id="vidnat">Відняти</button>
+					<button type="button" id="pomnoz">Помножити</button>
+					<button type="button" id="podelit">Поділити</button>
+				</div>
+			</form>
+			<div class="main__result result">
+				<div class="result__row">
+					Результат: <span id="result"></span>
+				</div>
+			</div>
+			<a class="link" href="../hw18.html">Back to tasks</a>
+		</main>
+		<footer class="footer" style="margin-bottom: 15px;"></footer>
+	</div>
+	<script src="script_1.js"></script>
+</body>
+</html>
