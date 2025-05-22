@@ -70,6 +70,7 @@ button {
 .main__list, 
 .list {
 	margin-bottom: 50px;
+	margin-left: 15px;
 }
 .main__item,
 .item {
@@ -104,6 +105,7 @@ button {
 .table {
 	border: 1px solid #ffff;
 	margin-bottom: 25px;
+	border-collapse: collapse;
 }
 .table__title {
 	border-bottom: 1px solid #ffff;
@@ -182,4 +184,71 @@ button {
 		font-size: 18px;
 		text-align: center;
 	}
+}
+/*-----------------------------------------------------*/
+hr {
+	border: 1px solid #ffffff;
+}
+/*-----------------------------------------------------*/
+.form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px;
+	
+}
+.form:not(:last-child) {
+	margin-bottom: 15px;
+}
+.form__row {
+
+}
+.form__buttons {
+	display: flex;
+	gap: 15px;
+	button {
+		padding: 10px;
+		border-radius: 5px;
+		border: #ffffff 1px solid;
+	}
+}
+.form__table {
+	padding: 10px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 15px;
+}
+.input {
+	color: #5e5373;
+}
+.result {
+	padding-bottom: 25px;
+}
+.result__row:not(:last-child) {
+	margin-bottom: 15px;
+}
+/*-----------------------------------------------------*/
+.trip__body {
+	display: flex;
+	column-gap: 15px;
+}
+.trip__stage {
+	padding: 10px;
+	border: 1px solid #ffffff;
+	display: grid;
+	gap: 15px;
+}
+.breakfast,
+.lunch,
+.dinner,
+.food,
+.trip {
+	display: grid;
+	gap: 10px;
+}
+fieldset {
+	border: 1px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
 }
