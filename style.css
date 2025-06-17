@@ -390,3 +390,22 @@ fieldset {
 	border-radius: 15px;
 	padding: 10px;
 }
+/*-----------------------------------------------------*/
+.main__garden{
+	width: 100%;
+	height: 70svh;
+	border: #ebe691 1px solid;
+	margin-bottom: 15px;
+	position: relative;
+}
+.house, .dog, .bird {
+	width: 200px;
+	position: absolute;
+}
+.house {
+	z-index: 1;
+}
+/*-----------------------------------------------------*/
+.checker {
+	margin-bottom: 15px;
+}
